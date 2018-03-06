@@ -41,6 +41,8 @@ VOLUME /var/lib/docker
 
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 ENV NODE_VERSION="8.9.4"
 
 RUN set -ex \
